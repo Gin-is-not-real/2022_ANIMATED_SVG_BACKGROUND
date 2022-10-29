@@ -33,7 +33,6 @@ html * {
 #CIRCLE_3 {
     transform-origin: center;
     animation: anim-rotate 280s infinite ease, opacity 6s infinite alternate-reverse ease;
-
 }
 
 
@@ -52,5 +51,18 @@ html * {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes anim-opacity {
+    0% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.05;
+
+    }
+    100% {
+        opacity: 0.02;
     }
 }
