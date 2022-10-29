@@ -11,8 +11,9 @@
     - j'exporte les groupes elements dans une même selection
 
 ### HTML:
-    - je copie le contenu du fichier SVG exporté
+    - je copie le contenu des fichiers SVG exporté
     - je le colle dans une balise div dans le HTML
+    - je renomme les classes de styles attribuées par Illustrator (.cls-n) pour éviter l'écrassement de styles
     
 *je peux maintenant accéder aux elements via CSS ou JS*
 
@@ -20,5 +21,8 @@
     - la balise <svg> contient le SVG
     - les balises <g> sont les groupes crées sur Illustrator
     - les balises <path>, <circle> etc.. sont les instructions de dessin des elements
+
+### CSS:
+    - je replace les svg sur la page en utilisant les positions absolues
 
 *à ce stade je push le projet sur github, et je créer une nouvelle branche pour les animations*
