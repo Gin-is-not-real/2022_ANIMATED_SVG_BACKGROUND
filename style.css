@@ -19,10 +19,7 @@ html * {
     /* animation: anim-rotate 80s infinite ease; */
 }
 #CIRCLE_1 {
-    --shad-col: red;
-    --shad-rad: 10px;
-    --shad-offs: 8px 8px;
-    
+    --shadow: 8px 8px 10px red;
     transform-origin: center;
     animation: 
         anim-rotate 90s infinite reverse ease, 
@@ -36,11 +33,7 @@ html * {
         anim-opacity 7s infinite alternate-reverse ease;
 }
 #CIRCLE_3 {
-    /* --shad-col: rgb(0, 128, 128); */
-    --shad-col: rgba(255, 0, 0, 0.783);
-    --shad-rad: 10px;
-    --shad-offs: 2px 2px;
-
+    --shadow: 3px 3px 10px rgba(255, 0, 0, 0.783);
     transform-origin: center;
     animation: 
         anim-rotate 280s infinite ease, 
@@ -70,12 +63,19 @@ html * {
 
 /* WAVES */
 #SVG_WAVES {
+    --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
     height: 600px;
     position: absolute;
     top: -50px;
+
+    animation: drop-shadow 16s infinite alternate-reverse cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 #WAVE_L_1 {
-    animation: anim-opacity 14s infinite alternate-reverse cubic-bezier(.18,.89,.31,1.75) ;
+    --shadow: 10px 10px 20px rgba(47, 176, 188, 0.765);
+    animation: 
+        anim-opacity 14s infinite alternate-reverse cubic-bezier(.18,.89,.31,1.75)
+        drop-shadow 10s infinite alternate cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 #WAVE_L_2 {
     animation: anim-opacity 8s infinite alternate ease-in ; 
@@ -84,11 +84,13 @@ html * {
     animation: anim-opacity 12s 5s infinite reverse ease ;
 }
 #WAVE_L_4 {
-    animation: anim-opacity 16s infinite alternate-reverse ease-in-out ;
+    animation: anim-opacity 16s infinite alternate-reverse ease-in-out,
+    drop-shadow 6s infinite alternate cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 #WAVE_B_1 {
-    animation: anim-opacity 6s infinite alternate cubic-bezier(.18,.89,.31,1.75) ;
+    animation: anim-opacity 6s infinite alternate cubic-bezier(.18,.89,.31,1.75),
+    drop-shadow 20s infinite reverse cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 #WAVE_B_2 {
     animation: anim-opacity 10s infinite alternate ease-in ; 
@@ -146,6 +148,6 @@ html * {
         filter: none;
     }
     100% {
-        filter: drop-shadow(var(--shad-offs) var(--shad-rad) var(--shad-col));
+        filter: drop-shadow(var(--shadow));
     }
 }
