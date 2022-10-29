@@ -2,30 +2,45 @@
 let circle3 = document.querySelector("#CIRCLE_3");
 circle3.paths = document.querySelectorAll("#CIRCLE_3 path");
 
+// bg
+let circleBgTop = document.querySelectorAll("#CIRCLE_BG_HALF_TOP");
+circleBgTop.paths = document.querySelectorAll("#CIRCLE_BG_HALF_TOP path");
+
+let circleBgBottom = document.querySelectorAll("#CIRCLE_BG_HALF_BOTTOM");
+circleBgBottom.paths = document.querySelectorAll("#CIRCLE_BG_HALF_BOTTOM path");
+
+let circleBgSmall1 = document.querySelectorAll("#CIRCLE_BG_SMALL_1");
+circleBgSmall1.paths = document.querySelectorAll("#CIRCLE_BG_SMALL_1 path");
+
+let circleBgSmall2 = document.querySelectorAll("#CIRCLE_BG_SMALL_2");
+circleBgSmall2.paths = document.querySelectorAll("#CIRCLE_BG_SMALL_2 path");
+
 //////////////////////////////////////////////////////
 // tests
-circleFlashingLoop();
+circle3FlashingLoop();
+// circlesBgFlashingLoop();
 
 //////////////////////////////////////////////////////
 // MAIN
-setInterval(circleFlashingLoop, getRandomInt(7000, 15000));
+setInterval(circle3FlashingLoop, getRandomInt(7000, 15000));
+
+// setInterval(circlesBgFlashingLoop, getRandomInt(8000, 15000));
+
 
 //////////////////////////////////////////////////////
 // LOOPS
-function circleFlashingLoop() {
+function circle3FlashingLoop() {
     circle3.paths.forEach(path => {
         path.setAttribute('class', 'wav-1');
-        // path.style.filter = "drop-shadow(3px 3px 5px red)";
     });
 
     setTimeout(function() {
         circle3.paths.forEach(path => {
             path.setAttribute('class', 'cir-2');
-            // path.style.filter = "";
         });
     }, getRandomInt(100, 300));
-
 }
+
 
 //////////////////////////////////////////////////////
 // TOOLS

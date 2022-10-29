@@ -42,6 +42,8 @@ html * {
 }
 #CIRCLES_BG {
     --mult: 10;
+    --shadow: 1px 1px 6px #257383;
+    animation: drop-shadow 10s infinite ease;
 }
 
 #CIRCLE_BG_HALF_TOP {
@@ -58,7 +60,7 @@ html * {
 }
 #CIRCLE_BG_SMALL_2 {
     animation: 
-        flash-opacity calc(var(--mult) * 42.6s) infinite alternate ease-in-out;
+        flash-opacity calc(var(--mult) * 22.6s) infinite alternate ease-in-out;
 }
 
 /* WAVES */
@@ -112,17 +114,36 @@ html * {
 
 @keyframes anim-opacity {
     0% {
-        opacity: 0.3;
+        opacity: 0.5;
     }
     95% {
-        opacity: 0.065;
+        opacity: 0.2;
     }
     100% {
-        opacity: 0.02;
+        opacity: 0.04;
     }
 }
-
 @keyframes flash-opacity {
+    0% {
+        opacity: 0;
+    }
+    77% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.0;
+    }
+    95% {
+        opacity: 0.3;
+    }
+    99% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.08;
+    }
+}
+/* @keyframes flash-opacity {
     0% {
         opacity: 0;
     }
@@ -141,7 +162,7 @@ html * {
     100% {
         opacity: 0.02;
     }
-}
+} */
 
 @keyframes drop-shadow {
     0% {
