@@ -19,9 +19,7 @@ html * {
     /* animation: anim-rotate 80s infinite ease; */
 }
 
-#CIRCLES_BG {
-    opacity: 0;
-}
+
 #CIRCLE_1 {
     --shad-col: red;
     --shad-rad: 10px;
@@ -37,7 +35,7 @@ html * {
     transform-origin: center;
     animation: 
         anim-rotate 150s infinite  ease, 
-        anim-opacity 6s infinite alternate-reverse ease;
+        anim-opacity 7s infinite alternate-reverse ease;
 }
 #CIRCLE_3 {
     /* --shad-col: rgb(0, 128, 128); */
@@ -48,11 +46,37 @@ html * {
     transform-origin: center;
     animation: 
         anim-rotate 280s infinite ease, 
-        opacity 6s infinite alternate-reverse ease, 
+        anim-opacity 9s infinite alternate ease, 
         drop-shadow 2s 20s infinite alternate cubic-bezier(.31,-0.98,.62,.49);
 }
 
 
+#CIRCLES_BG {
+    --mult: 10;
+}
+
+#CIRCLE_BG_HALF_TOP {
+    /* opacity: 0; */
+    animation: 
+        flash-opacity calc(var(--mult) * 10s) infinite alternate ease;
+}
+#CIRCLE_BG_HALF_BOTTOM {
+    /* opacity: 0; */
+    animation: 
+        /* flash-opacity 27.3s infinite ease-in-out; */
+        flash-opacity calc(var(--mult) * 27.3s) infinite alternate ease-in-out;
+}
+
+#CIRCLE_BG_SMALL_1 {
+    animation: 
+        /* flash-opacity 30s infinite ease-in-out; */
+        flash-opacity calc(var(--mult) * 30.14s) infinite ease-in-out;
+}
+#CIRCLE_BG_SMALL_2 {
+    animation: 
+    /* flash-opacity 40s infinite alternate ease-in-out; */
+    flash-opacity calc(var(--mult) * 42.6s) infinite alternate ease-in-out;
+}
 
 /* WAVES */
 #SVG_WAVES {
@@ -75,9 +99,29 @@ html * {
     0% {
         opacity: 0.3;
     }
-    90% {
-        opacity: 0.05;
+    95% {
+        opacity: 0.06;
+    }
+    100% {
+        opacity: 0.02;
+    }
+}
 
+@keyframes flash-opacity {
+    0% {
+        opacity: 0;
+    }
+    77% {
+        opacity: 0.02;
+    }
+    80% {
+        opacity: 0.0;
+    }
+    95% {
+        opacity: 0.06;
+    }
+    99% {
+        opacity: 0.05;
     }
     100% {
         opacity: 0.02;
