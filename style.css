@@ -24,7 +24,7 @@ html * {
 }
 #CIRCLE_1 {
     transform-origin: center;
-    animation: anim-rotate 90s infinite reverse ease, anim-opacity 5s infinite alternate-reverse ease;
+    animation: anim-rotate 90s infinite reverse ease, anim-opacity 5s infinite alternate-reverse ease, red-shadow 10s 10s infinite ease;
 }
 #CIRCLE_2 {
     transform-origin: center;
@@ -64,5 +64,14 @@ html * {
     }
     100% {
         opacity: 0.02;
+    }
+}
+
+@keyframes red-shadow {
+    0% {
+        filter: none;
+    }
+    100% {
+        filter: drop-shadow(8px 8px 10px red);
     }
 }
