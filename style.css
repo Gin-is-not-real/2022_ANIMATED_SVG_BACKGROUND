@@ -19,6 +19,15 @@ html * {
     /* animation: anim-rotate 80s infinite ease; */
 }
 
+#CIRCLES_BG {
+    opacity: 0;
+}
+#CIRCLE_1 path {
+    transform-origin: center;
+    /* animation: anim-rotate 280s infinite ease, opacity 6s infinite alternate-reverse ease; */
+    animation: anim-rotate 100s infinite ease, opacity 6s infinite alternate-reverse ease;
+}
+
 /* WAVES */
 #SVG_WAVES {
     height: 500px;
