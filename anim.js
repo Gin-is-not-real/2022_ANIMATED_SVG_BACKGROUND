@@ -22,16 +22,29 @@ let cardsContainer = document.querySelector('#cards-container');
 
 let button = document.querySelector('#content-container input');
 
+// cards
+let cards = document.getElementsByClassName('card');
+
+//window.location.href="http://votre_url"
+
 //////////////////////////////////////////////////////
 // main
-
 button.addEventListener('click', madeAppearCards);
 cardsContainer.addEventListener('click', madeDesappearCards);
 navHome.addEventListener('click', madeDesappearCards);
 navProjects.addEventListener('click', madeAppearCards);
-
 madeDesappearCards();
 
+
+for (const elt in cards) {
+    if (Object.hasOwnProperty.call(cards, elt)) {
+        const element = cards[elt];
+
+        element.addEventListener('click', function() {
+            window.location.href = element.dataset.url;
+        })
+    }
+}
 
 function madeAppearCards() {
     cardsContainer.style.display = 'flex';
