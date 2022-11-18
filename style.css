@@ -2,6 +2,7 @@
 
 /* MAIN */
 html {
+    background: #081923;
     font-family: 'Advent Pro', sans-serif;
     
     --color: rgba(47, 176, 188, 0.765);
@@ -59,10 +60,10 @@ h1, header, h2, p, div {
     position: absolute;
     z-index: 50;
     top: 20vh;
-    left: calc(460px - 100px);
+    left: calc(500px - 100px);
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508));
+    filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.300));
     text-shadow: 1px 1px 2px rgba(27, 106, 113, 0.2);
 
 }
@@ -72,11 +73,13 @@ h1, header, h2, p, div {
 }
 #content-container input {
     background-color: transparent;
+    /* background-color: rgba(8, 25, 35, 0.718); */
     border: 1px solid var(--color);
     border-radius: 2px;
     width: min-content;
     padding: 0.5rem 2rem;
     font-family: 'Advent Pro', sans-serif;
+    justify-self: center;
 }
 #content-container input:hover {
     box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.200);
