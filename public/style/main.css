@@ -5,7 +5,8 @@ html {
     background: #081923;
     font-family: 'Advent Pro', sans-serif;
     
-    --color: rgba(47, 176, 188, 0.765);
+    --color: rgba(47, 176, 188, 0.75);
+    --shadow-color: rgba(47, 176, 188, 0.175);
 }
 html * {
     padding: 0;
@@ -13,10 +14,13 @@ html * {
     box-sizing: border-box;
 
     font-size: 2.8vh;
+    font-weight: initial;
+
     color: var(--color);
 }
 h1 {
     font-size: 3.8rem;
+
 }
 h2 {
     font-size: 1.8rem;
@@ -29,6 +33,17 @@ h1, header, h2, p, div {
 }
 
 
+/* CLASSES */
+.active {
+    border-bottom: 1px solid var(--shadow-color);
+    transform: scale(1.05);
+}
+.hoverable:hover {
+    /* text-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500); */
+    filter: drop-shadow(1px 1px 10px rgba(30, 111, 119, 0.5));
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 
 /* KEYFRAMES */

@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 3px rgba(47, 176, 188, 0.164);
-    filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765));
+    box-shadow: 0 0 3px var(--shadow-color);
+    filter: drop-shadow(1px 1px 3px var(--color));
 }
 #main-header nav ul {
     list-style: none;
@@ -14,10 +14,7 @@
     display: flex;
     gap: 2vw;
 }
-.active {
-    border-bottom: 1px solid rgba(47, 176, 188, 0.300);
-    transform: scale(1.05);
-}
+
 
 
 /* content */
@@ -30,8 +27,8 @@
     left: calc(500px - 100px);
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.300));
-    text-shadow: 1px 1px 2px rgba(27, 106, 113, 0.2);
+    filter: drop-shadow(1px 1px 2px var(--shadow-color));
+    /* text-shadow: 1px 1px 2px rgba(27, 106, 113, 0.2); */
 
 }
 #content-container p {
@@ -49,7 +46,7 @@
     justify-self: center;
 }
 #content-container input:hover {
-    box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.200);
+    box-shadow: 1px 1px 10px var(--shadow-color);
 }
 
 /* CARDS */
@@ -72,7 +69,7 @@
     gap: 100px;
     align-items: center;
 
-    text-shadow: 1px 1px 2px rgba(47, 176, 188, 0.508);
+    text-shadow: 1px 1px 2px var(--shadow-color);
 }
 #cards-container span {
     position: absolute;
@@ -96,7 +93,7 @@
     gap: 15%;
 }
 .card:hover {
-    box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500);
+    box-shadow: 1px 1px 10px var(--shadow-color);
     transform: scale(1.05);
 }
 figure {
@@ -106,16 +103,12 @@ figure {
     justify-content: center;
 }
 img {
-    border: 1px solid rgba(47, 176, 188, 0.200);
+    border: 1px solid var(--shadow-color);
     border-radius: 4px;
 }
 img:hover {
-    box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500);
+    box-shadow: 1px 1px 10px var(--shadow-color);
 }
 
-.hoverable:hover {
-    /* text-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500); */
-    filter: drop-shadow(1px 1px 10px rgba(30, 111, 119, 0.5));
-    cursor: pointer;
-    transform: scale(1.05);
-}
+
+

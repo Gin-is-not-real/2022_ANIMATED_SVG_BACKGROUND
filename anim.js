@@ -23,18 +23,14 @@ let cardsContainer = document.querySelector('#cards-container');
 let button = document.querySelector('#content-container input');
 
 //////////////////////////////////////////////////////
-// tests
+// main
 
-button.addEventListener('click', function() {
-    madeAppearCards();
-})
-cardsContainer.addEventListener('click', function() {
-    madeDesappearCards();
-})
+button.addEventListener('click', madeAppearCards);
+cardsContainer.addEventListener('click', madeDesappearCards);
 navHome.addEventListener('click', madeDesappearCards);
 navProjects.addEventListener('click', madeAppearCards);
 
-
+madeDesappearCards();
 
 
 function madeAppearCards() {
