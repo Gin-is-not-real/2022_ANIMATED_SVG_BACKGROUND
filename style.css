@@ -52,13 +52,13 @@ h1, header, h2, p, div {
 }
 
 /* content */
-#test-div {
-    width: 60vw;
+#content-container {
+    width: 55vw;
     padding: 2vw;
 
     position: absolute;
-    top: 28vh;
-    left: var(--circles-min-width);
+    top: 24vh;
+    left: calc(460px - 100px);
 
     display: flex;
     flex-direction: column;
@@ -66,20 +66,15 @@ h1, header, h2, p, div {
     filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508));
 
 }
-#test-div header {
+#content-container header {
     margin-bottom: 6vh;
 }
 
 /* CIRCLES */
 #SVG_CIRCLES {
-    /* width: var(--circles-width); */
-    /* min-width: var(--circles-min-width); */
-    width: 40vw;
-    min-width:360px;
-    height: 80vh;
     position: absolute;
-    left: -50px;
-    /* animation: anim-rotate 80s infinite ease; */
+    left: -100px;
+    height: 86vh;
 }
 #CIRCLE_1 {
     --shadow: 8px 8px 10px red;
@@ -129,11 +124,12 @@ h1, header, h2, p, div {
 /* WAVES */
 #SVG_WAVES {
     --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
-    width: 100vw !important;
-    /* min-width: 700px; */
-    min-height: 80vh;
+    
     position: absolute;
+
     top: 14vh;
+    width: 1300px;
+
     animation: drop-shadow 16s infinite alternate-reverse cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -208,27 +204,6 @@ h1, header, h2, p, div {
         opacity: 0.08;
     }
 }
-/* @keyframes flash-opacity {
-    0% {
-        opacity: 0;
-    }
-    77% {
-        opacity: 0.02;
-    }
-    80% {
-        opacity: 0.0;
-    }
-    95% {
-        opacity: 0.06;
-    }
-    99% {
-        opacity: 0.05;
-    }
-    100% {
-        opacity: 0.02;
-    }
-} */
-
 @keyframes drop-shadow {
     0% {
         filter: none;
@@ -236,4 +211,10 @@ h1, header, h2, p, div {
     100% {
         filter: drop-shadow(var(--shadow));
     }
+}
+
+/* media queries */
+@media all and (max-width: 800px) {
+    /* do something */
+
 }
