@@ -17,7 +17,7 @@
 
 
 
-/* content */
+/* HOME CONTENT */
 #content-container {
     width: 55vw;
     padding: 2vw;
@@ -44,6 +44,7 @@
     padding: 0.5rem 2rem;
     font-family: 'Advent Pro', sans-serif;
     justify-self: center;
+    color: var(--color-2);
 }
 #content-container input:hover {
     box-shadow: 1px 1px 10px var(--shadow-color);

@@ -6,6 +6,7 @@ html {
     font-family: 'Advent Pro', sans-serif;
     
     --color: rgba(47, 176, 188, 0.75);
+    --color-2: rgba(63, 204, 247, 0.75);
     --shadow-color: rgba(47, 176, 188, 0.175);
 }
 html * {
@@ -44,8 +45,14 @@ h1, header, h2, p, div {
     cursor: pointer;
     transform: scale(1.05);
 }
-
-
+span {
+    font-size: inherit;
+    color: var(--color-2);
+}
+p span {
+    font-size: 1.3rem;
+    color: var(--color-2);
+}
 /* KEYFRAMES */
 @keyframes anim-rotate {
     0% {
