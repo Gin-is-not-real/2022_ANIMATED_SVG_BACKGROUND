@@ -3,12 +3,43 @@ html * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-size: 3vh;
+    color: rgba(47, 176, 188, 0.765);
 }
 /* svg {
     width: 1000px;
     position: absolute;
     top: 50px;
 } */
+h1 {
+    font-size: 3.8rem;
+}
+
+/* DEV */
+h1, header, ul {
+    /* border: 1px solid red; */
+}
+
+/* HEADER */
+#main-header {
+    height: 14vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 0 3px rgba(47, 176, 188, 0.164);
+    filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765));
+}
+
+#main-header nav ul {
+    list-style: none;
+    padding-right: 4vh;
+
+    display: flex;
+    gap: 2vw;
+}
 
 
 /* CIRCLES */
@@ -72,7 +103,7 @@ html * {
     min-width: 700px;
     height: 100vh;
     position: absolute;
-    top: 1vh;
+    top: 14vh;
     animation: drop-shadow 16s infinite alternate-reverse cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
