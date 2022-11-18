@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
 /* MAIN */
+html {
+    font-family: 'Advent Pro', sans-serif;
+    
+    --circles-width: 40vw;
+    --circles-min-width: 360px;
+}
 html * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-    font-size: 3vh;
+    font-size: 2.8vh;
     color: rgba(47, 176, 188, 0.765);
+    
 }
 /* svg {
     width: 1000px;
@@ -15,9 +24,11 @@ html * {
 h1 {
     font-size: 3.8rem;
 }
-
+h2 {
+    font-size: 1.8rem;
+}
 /* DEV */
-h1, header, ul {
+h1, header, h2, p, div {
     /* border: 1px solid red; */
 }
 
@@ -32,7 +43,6 @@ h1, header, ul {
     box-shadow: 0 0 3px rgba(47, 176, 188, 0.164);
     filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765));
 }
-
 #main-header nav ul {
     list-style: none;
     padding-right: 4vh;
@@ -41,12 +51,32 @@ h1, header, ul {
     gap: 2vw;
 }
 
+/* content */
+#test-div {
+    width: 60vw;
+    padding: 2vw;
+
+    position: absolute;
+    top: 28vh;
+    left: var(--circles-min-width);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508));
+
+}
+#test-div header {
+    margin-bottom: 6vh;
+}
 
 /* CIRCLES */
 #SVG_CIRCLES {
+    /* width: var(--circles-width); */
+    /* min-width: var(--circles-min-width); */
     width: 40vw;
-    min-width: 300px;
-    height: 100vh;
+    min-width:360px;
+    height: 80vh;
     position: absolute;
     left: -50px;
     /* animation: anim-rotate 80s infinite ease; */
@@ -99,13 +129,14 @@ h1, header, ul {
 /* WAVES */
 #SVG_WAVES {
     --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
-    width: 100vw;
-    min-width: 700px;
-    height: 100vh;
+    width: 100vw !important;
+    /* min-width: 700px; */
+    min-height: 80vh;
     position: absolute;
     top: 14vh;
     animation: drop-shadow 16s infinite alternate-reverse cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 
 #WAVE_L_1 {
     --shadow: 10px 10px 20px rgba(47, 176, 188, 0.765);
