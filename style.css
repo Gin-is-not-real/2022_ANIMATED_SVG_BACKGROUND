@@ -13,7 +13,6 @@ html * {
 
     font-size: 2.8vh;
     color: var(--color);
-    
 }
 /* svg {
     width: 1000px;
@@ -53,7 +52,8 @@ h1, header, h2, p, div {
     width: 55vw;
     padding: 2vw;
     position: absolute;
-    top: 24vh;
+    z-index: 50;
+    top: 20vh;
     left: calc(460px - 100px);
     display: flex;
     flex-direction: column;
@@ -81,39 +81,37 @@ h1, header, h2, p, div {
     /* border: 1px solid var(--color);  */
     border-radius: 4px;
 
-    width: calc(90vw - 17px);
-    height: calc(80vh - 14vh);
-
     width: calc(100vw - 17px);
     height: calc(100vh - 18vh);
 
-    /* margin: 5vw 5vw; */
     padding: 2vw;
-
     position: absolute;
     z-index: 100;
 
     /* changed by js */
     display: flex;
     display: none;
-
     justify-content: center;
     gap: 100px;
     align-items: center;
+}
+#cards-container span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 2%;
+    filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765));
 }
 .card {
     background-color: #18496635;
     border: 1px solid var(--color);
     border-radius: 4px;
-
     padding: 1% 4%;
-
     width: 40%;
     max-width: 300px;
     height: 80%;
-
     text-align: center;
-
+    text-shadow: 1px 1px 2px rgba(47, 176, 188, 0.508);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +119,7 @@ h1, header, h2, p, div {
 }
 .card:hover {
     box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500);
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 figure {
     width: 100%;
@@ -136,6 +134,14 @@ img {
 img:hover {
     box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500);
 }
+
+.hoverable:hover {
+    /* text-shadow: 1px 1px 10px rgba(47, 176, 188, 0.500); */
+    filter: drop-shadow(1px 1px 10px rgba(30, 111, 119, 0.5));
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 /* CIRCLES */
 #SVG_CIRCLES {
     position: absolute;
@@ -192,7 +198,6 @@ img:hover {
     --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
     
     position: absolute;
-    z-index: -100;
 
     top: 14vh;
     width: 1300px;
