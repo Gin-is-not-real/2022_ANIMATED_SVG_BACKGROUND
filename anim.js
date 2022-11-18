@@ -12,7 +12,10 @@
 let circle3 = document.querySelector("#CIRCLE_3");
 circle3.paths = document.querySelectorAll("#CIRCLE_3 path");
 
-// popup
+// navigation, popup
+let navHome = document.querySelector('#nav-home');
+let navProjects = document.querySelector('#nav-projects');
+
 let svgContainer = document.querySelector('#svg-container');
 let contentContainer = document.querySelector('#content-container');
 let cardsContainer = document.querySelector('#cards-container');
@@ -23,19 +26,33 @@ let button = document.querySelector('#content-container input');
 // tests
 
 button.addEventListener('click', function() {
-    cardsContainer.style.display = 'flex';
-
-    svgContainer.style.filter = 'blur(10px)';
-    contentContainer.style.filter = 'blur(10px)';
+    madeAppearCards();
 })
 cardsContainer.addEventListener('click', function() {
-    cardsContainer.style.display = 'none';
+    madeDesappearCards();
+})
+navHome.addEventListener('click', madeDesappearCards);
+navProjects.addEventListener('click', madeAppearCards);
 
+
+
+
+function madeAppearCards() {
+    cardsContainer.style.display = 'flex';
+    svgContainer.style.filter = 'blur(10px)';
+    contentContainer.style.filter = 'blur(10px)';
+
+    navHome.classList.remove('active');
+    navProjects.classList.add('active');
+}
+function madeDesappearCards() {
+    cardsContainer.style.display = 'none';
     svgContainer.style.filter = 'none';
     contentContainer.style.filter = 'drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508))';
-})
 
-button.click();
+    navHome.classList.add('active');
+    navProjects.classList.remove('active');
+}
 //////////////////////////////////////////////////////
 // MAIN
 circle3FlashingLoop();
