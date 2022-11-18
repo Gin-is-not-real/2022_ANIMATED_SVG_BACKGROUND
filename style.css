@@ -77,19 +77,32 @@ h1, header, h2, p, div {
 
 /* CARDS */
 #cards-container {
-    background-color: #9c571e;
+    background-color: rgba(21, 58, 62, 0.2);
     border: 1px solid var(--color);
-    width: 100vw;
-    height: 80vh;
-    position: absolute;
+    border-radius: 4px;
 
+    width: calc(90vw - 17px);
+    height: calc(80vh - 14vh);
+
+    margin: 5vw;
+    padding: 10vw;
+
+    position: absolute;
+    z-index: 100;
+
+    /* changed by js */
     display: flex;
+    display: none;
+
     justify-content: center;
     align-items: center;
-
-    display: none;
-    z-index: 100;
 }
+/* #cards-container>* {
+    background-color: rgba(21, 58, 62, 0.2);
+    border: 1px solid var(--color);
+    width: 80%;
+    height: 80%;
+} */
 
 /* CIRCLES */
 #SVG_CIRCLES {
