@@ -21,7 +21,6 @@ let button = document.querySelector('#content-container input');
 
 //////////////////////////////////////////////////////
 // tests
-console.log(button);
 
 button.addEventListener('click', function() {
     cardsContainer.style.display = 'flex';
@@ -35,6 +34,8 @@ cardsContainer.addEventListener('click', function() {
     svgContainer.style.filter = 'none';
     contentContainer.style.filter = 'drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508))';
 })
+
+button.click();
 //////////////////////////////////////////////////////
 // MAIN
 circle3FlashingLoop();
