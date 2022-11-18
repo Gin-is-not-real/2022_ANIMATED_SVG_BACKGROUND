@@ -71,6 +71,25 @@ h1, header, h2, p, div {
     padding: 0.5rem 2rem;
     font-family: 'Advent Pro', sans-serif;
 }
+#content-container input:hover {
+    box-shadow: 1px 1px 10px rgba(47, 176, 188, 0.200);
+}
+
+/* CARDS */
+#cards-container {
+    background-color: #9c571e;
+    border: 1px solid var(--color);
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+    z-index: 100;
+}
 
 /* CIRCLES */
 #SVG_CIRCLES {
@@ -128,6 +147,7 @@ h1, header, h2, p, div {
     --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
     
     position: absolute;
+    z-index: -100;
 
     top: 14vh;
     width: 1300px;
