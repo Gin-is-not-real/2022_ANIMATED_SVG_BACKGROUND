@@ -214,6 +214,10 @@ h1, header, h2, p, div {
 }
 
 /* media queries */
+@media all and (min-width: 800px) {
+    /* do something */
+
+}
 @media all and (max-width: 800px) {
     /* do something */
 
