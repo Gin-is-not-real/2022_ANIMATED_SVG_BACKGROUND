@@ -4,8 +4,7 @@
 html {
     font-family: 'Advent Pro', sans-serif;
     
-    --circles-width: 40vw;
-    --circles-min-width: 360px;
+    --color: rgba(47, 176, 188, 0.765);
 }
 html * {
     padding: 0;
@@ -13,7 +12,7 @@ html * {
     box-sizing: border-box;
 
     font-size: 2.8vh;
-    color: rgba(47, 176, 188, 0.765);
+    color: var(--color);
     
 }
 /* svg {
@@ -39,14 +38,12 @@ h1, header, h2, p, div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     box-shadow: 0 0 3px rgba(47, 176, 188, 0.164);
     filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765));
 }
 #main-header nav ul {
     list-style: none;
     padding-right: 4vh;
-
     display: flex;
     gap: 2vw;
 }
@@ -55,19 +52,24 @@ h1, header, h2, p, div {
 #content-container {
     width: 55vw;
     padding: 2vw;
-
     position: absolute;
     top: 24vh;
     left: calc(460px - 100px);
-
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     filter: drop-shadow(1px 1px 2px rgba(47, 176, 188, 0.508));
-
 }
-#content-container header {
+#content-container p {
     margin-bottom: 6vh;
+    margin-top: 6vh;
+}
+#content-container input {
+    background-color: transparent;
+    border: 1px solid var(--color);
+    border-radius: 2px;
+    width: min-content;
+    padding: 0.5rem 2rem;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 /* CIRCLES */
