@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
     html, body {
         max-width: 400px;
     }
@@ -20,4 +20,21 @@
         transform: translateY(-20vh);
     }
 
+    #cards-container {
+        width: 100vw;
+        height: max-content;
+        margin-top: 2vh;
+        padding-top: 2vh;
+        gap: 5px;
+    }
+
+    .card {
+        width: 80%;
+        height: 300px;
+        margin-top: 6vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

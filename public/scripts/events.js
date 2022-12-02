@@ -33,10 +33,19 @@ for (const elt in cards) {
     }
 }
 
+
+//////////////////////////////////////////////////////
+// test
+console.log(window.screen.width);
+
 function madeAppearCards() {
     cardsContainer.style.display = 'flex';
     svgContainer.style.filter = 'blur(10px)';
     contentContainer.style.filter = 'blur(10px)';
+
+    if(window.screen.width < 900) {
+        cardsContainer.style.flexDirection = 'column';
+    }
 
     navHome.classList.remove('active');
     navProjects.classList.add('active');

@@ -2,6 +2,7 @@
 #main-header {
     position: sticky;
     z-index: 200;
+    width: 100vw;
     height: 14vh;
     padding: 5vh;
     display: flex;
@@ -60,6 +61,7 @@
 #content-container input:hover {
     box-shadow: 1px 1px 10px var(--shadow-color);
 }
+
 
 /* CARDS */
 #cards-container {
