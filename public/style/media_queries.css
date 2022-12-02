@@ -5,6 +5,10 @@
         max-width: 400px;
     }
 
+    #main-header {
+        padding: 3vh;
+    }
+
     #content-container {
         width: 80vw;
         padding: 6vw;

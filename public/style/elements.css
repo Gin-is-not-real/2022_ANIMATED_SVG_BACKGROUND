@@ -12,9 +12,9 @@
 }
 #main-header nav ul {
     list-style: none;
-    padding-right: 4vh;
     display: flex;
-    gap: 2vw;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #header-blur {
