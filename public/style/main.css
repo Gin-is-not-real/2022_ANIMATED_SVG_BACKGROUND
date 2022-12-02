@@ -5,6 +5,7 @@ html {
     background: #081923;
     font-family: 'Advent Pro', sans-serif;
     
+    --bg-color: #081923;
     --color: rgba(47, 176, 188, 0.75);
     --color-2: rgba(63, 204, 247, 0.75);
     --shadow-color: rgba(47, 176, 188, 0.175);

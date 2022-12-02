@@ -1,5 +1,7 @@
 /* HEADER */
 #main-header {
+    position: sticky;
+    z-index: 200;
     height: 14vh;
     padding: 5vh;
     display: flex;
@@ -15,6 +17,15 @@
     gap: 2vw;
 }
 
+#header-blur {
+    position: fixed;
+    z-index: 190;
+    width: 100vw;
+    height: 18vh;
+    top: -2vh;
+    background-color: #070b0dcf;
+    filter: blur(66px);
+}
 
 
 /* HOME CONTENT */
