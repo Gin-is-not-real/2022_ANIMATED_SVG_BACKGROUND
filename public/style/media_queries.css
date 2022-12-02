@@ -1,8 +1,7 @@
-
-
 @media screen and (max-width: 800px) {
     html, body {
-        max-width: 400px;
+        max-width: 100vh;
+        overflow-x: clip;
     }
 
     #main-header {

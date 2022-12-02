@@ -5,6 +5,7 @@
     width: 100vw;
     height: 14vh;
     padding: 5vh;
+    padding-right: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
