@@ -52,12 +52,8 @@
 /* WAVES */
 #SVG_WAVES {
     --shadow: 10px 10px 10px rgba(41, 163, 174, 0.765);
-    
     position: absolute;
-
-    top: 14vh;
     width: 1300px;
-
     animation: drop-shadow 16s infinite alternate-reverse cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
