@@ -1,23 +1,26 @@
+@media screen and (max-width: 920px) {
+    #content-container {
+        width: 50vw;
+        left: calc(500px - 140px);
+    }
+}
+
+
 @media screen and (max-width: 800px) {
     html, body {
-        max-width: 100vh;
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: clip;
     }
-
-    #main-header {
-        padding: 3vh;
-    }
-
     #content-container {
         width: 80vw;
         padding: 6vw;
         left: 0;
-        top: 60vh;
+        top: 70vh;
     }
-
     #svg-container {
         transform: translateY(-20vh);
     }
-
     #cards-container {
         width: 100vw;
         height: max-content;
@@ -25,7 +28,6 @@
         padding-top: 2vh;
         gap: 5px;
     }
-
     .card {
         width: 80%;
         height: 300px;
@@ -34,5 +36,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #main-header {
+        padding: 3vh;
+    }
+    #content-container {
+        top: 60vh;
     }
 }
