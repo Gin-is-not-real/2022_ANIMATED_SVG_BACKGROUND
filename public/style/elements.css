@@ -36,7 +36,7 @@
     padding: 2vw;
     position: absolute;
     z-index: 50;
-    top: 20vh;
+    top: 10vh;
     left: calc(500px - 100px);
     display: flex;
     flex-direction: column;
