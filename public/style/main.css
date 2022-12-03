@@ -20,6 +20,9 @@ html * {
 
     color: var(--color);
 }
+body {
+    overflow-x: clip;
+}
 h1 {
     font-size: 3.8rem;
 
