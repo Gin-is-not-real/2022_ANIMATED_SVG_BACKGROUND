@@ -4,7 +4,9 @@
 [] - visibilité des élements clicables
 [] - touch fx
 [] - gestion comportemement scroll (fluidité)
+
 [X] - scroll sur le main avec `overflow`;
+[X] - style scrollbar
 
 
 ## notes
