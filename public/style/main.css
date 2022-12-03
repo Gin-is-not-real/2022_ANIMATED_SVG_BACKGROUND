@@ -9,6 +9,9 @@ html {
     --color: rgba(47, 176, 188, 0.75);
     --color-2: rgba(63, 204, 247, 0.75);
     --shadow-color: rgba(47, 176, 188, 0.175);
+
+    overflow-x: clip;
+    overflow-y: clip;
 }
 html * {
     padding: 0;
@@ -20,9 +23,16 @@ html * {
 
     color: var(--color);
 }
-body {
-    overflow-x: clip;
+
+main {
+    position: absolute;
+    top: 14vh;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
 }
+
+
 h1 {
     font-size: 3.8rem;
 
