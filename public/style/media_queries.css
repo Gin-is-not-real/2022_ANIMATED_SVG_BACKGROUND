@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 400px) {
+    main {
+        height: calc(100vh - 27vh);
+    }
     #main-header {
         padding: 3vh;
     }

@@ -50,9 +50,9 @@ main::-webkit-scrollbar-track {
 }
 
 main::-webkit-scrollbar-thumb {
-    background-color: rgb(17, 50, 62);
+    background-color: rgb(21, 62, 77);
     border-radius: 20px;
-    border: 3px solid var(--color-2);
+    border: 1px solid rgb(27, 84, 104);
 }
 
 h1 {
