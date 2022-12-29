@@ -93,6 +93,8 @@
     margin: 2%;
     /* filter: drop-shadow(1px 1px 3px rgba(47, 176, 188, 0.765)); */
 }
+
+
 .card {
     background-color: #18496635;
     border: 1px solid var(--color);
@@ -110,6 +112,22 @@
 .card:hover {
     box-shadow: 1px 1px 10px var(--shadow-color);
     transform: scale(1.05);
+}
+.card header * {
+    /* margin: 2vh auto; */
+}
+.card ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: -0.5vh auto 2vh auto;
+}
+.card li {
+    font-size: 2vh;
+    padding: 1vh;
+}
+.card li::before {
+    content: "#";
 }
 figure {
     width: 100%;
