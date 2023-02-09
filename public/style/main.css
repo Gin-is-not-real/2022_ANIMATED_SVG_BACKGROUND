@@ -71,6 +71,11 @@ h1, header, h2, p, div {
 
 
 /* CLASSES */
+.flex-hor {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
 .active {
     border-bottom: 1px solid var(--shadow-color);
     transform: scale(1.05);

@@ -6,7 +6,7 @@ let svgContainer = document.querySelector('#svg-container');
 let contentContainer = document.querySelector('#content-container');
 let cardsContainer = document.querySelector('#cards-container');
 
-let button = document.querySelector('#content-container input');
+let btnPortfolio = document.getElementById('btn-portfolio');
 
 // cards
 let cards = document.getElementsByClassName('card');
@@ -15,14 +15,19 @@ let cards = document.getElementsByClassName('card');
 
 
 //////////////////////////////////////////////////////
-// main
-button.addEventListener('click', madeAppearCards);
-cardsContainer.addEventListener('click', madeDesappearCards);
-navHome.addEventListener('click', madeDesappearCards);
-navProjects.addEventListener('click', madeAppearCards);
+// MAIN
+
 madeDesappearCards();
 
 
+//////////////////////////////////////////////////////
+// EVENTS
+btnPortfolio.addEventListener('click', madeAppearCards);
+cardsContainer.addEventListener('click', madeDesappearCards);
+navHome.addEventListener('click', madeDesappearCards);
+navProjects.addEventListener('click', madeAppearCards);
+
+// add listeners on projects card's
 for (const elt in cards) {
     if (Object.hasOwnProperty.call(cards, elt)) {
         const element = cards[elt];
@@ -32,11 +37,8 @@ for (const elt in cards) {
         })
     }
 }
-
-
 //////////////////////////////////////////////////////
-// test
-console.log(window.screen.width);
+// FUNCTIONS
 
 function madeAppearCards() {
     cardsContainer.style.display = 'flex';
