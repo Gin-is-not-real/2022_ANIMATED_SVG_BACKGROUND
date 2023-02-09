@@ -7,13 +7,23 @@ let contentContainer = document.querySelector('#content-container');
 let cardsContainer = document.querySelector('#cards-container');
 
 let btnPortfolio = document.getElementById('btn-portfolio');
+let btnCv = document.getElementById('btn-cv');
+let btnRecom = document.getElementById('btn-recom');
+
 
 // cards
 let cards = document.getElementsByClassName('card');
 //window.location.href="http://votre_url"
 
 
-
+//////////////////////////////////////////////////////
+// TESTS
+btnCv.addEventListener('click', function() {
+    window.location.href = "public/data/cv_ninap_alt.pdf";
+})
+btnRecom.addEventListener('click', function() {
+    window.location.href = "public/data/lr_ninap.pdf";
+})
 //////////////////////////////////////////////////////
 // MAIN
 
